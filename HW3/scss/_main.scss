@@ -11,6 +11,7 @@ header {
     background-size: cover;
     height: 663px;
     border-radius: 0% 0% 40%;
+    position: relative;
     }
 .header-wrap {
     margin-left: 115px;
@@ -43,24 +44,20 @@ header {
     width: 30px;
     height: 30px;
 }
-.header_heading {
+p.header_heading {
     box-sizing: content-box;
     width: 500px;
     font-size: 50px;
     font-weight: bold;
 }
-/* не працює, не можу свтановити заливку за текстом
+
 .header_heading::after {
-    content: " ";
-    border-top: 0px solid $backGroundColorWord;
-    border-right: 0px solid $backGroundColorWord;
-    border-bottom: 0px solid $backGroundColorWord;
-    border-left: 223px solid $backGroundColorWord;
+    content: "awesome";
+    background-color: $backGroundColorWord;
     position: relative;
-    right: 365px;
-    z-index: 1;
+    bottom: 58px;
+    color: $sectionTextColor;
 }
-*/
 .header_text {
     box-sizing: content-box;
     width: 600px;
@@ -83,9 +80,18 @@ button {
 .section_text {
     text-align: center;
     font-weight: bold;
+    padding-left: 167px;
     font-size: 35px;
     color: $sectionTextColor;
+    position: relative;
 }
+    p.section_text::after {
+        content: "adventure";
+        background-color: $backGroundColorWord;
+        position: relative;
+        right: 188px;
+        color: $sectionTextColor; 
+    }
 .section_card {
     display: flex;
     justify-content: space-evenly;
@@ -109,8 +115,9 @@ img.section_card_img {
     color: white;
     font-weight: bold;
 }
-/* текст по центру, як зробити */
-a.section_link {
+.section_link {
+    display: flex;
+    justify-content: center;
     color: white;
     margin: auto;
 }
@@ -125,22 +132,33 @@ a.section_link {
     height: 100px;
     background: $sectionBannerGradient;
     border-radius: 5px;
-
+}
+.section_banner_heading::after{
+    content: "start";
+    background-color: $backGroundColorWord;
+    position: relative;
+    color: $sectionTextColor;
+    right: 264px;
 }
 .section_banner_button {
     display: block;
-    margin-right: 60px;
+    margin-right: 100px;
 }
 .footer-wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-grow: 1;
     padding-top: 90px;
     padding-bottom: 30px;
     background-color: $backGroungColorCardAndFooter;
     color: white;
     align-items: center;
+        div, p, span {
+            flex-basis: 30%;
+          }
+          div, span {
+            text-align: center;
+          }
 }
 .section_banner_heading {
     padding: 20px 0px 0px 100px;
@@ -152,3 +170,14 @@ a.section_link {
     padding-left: 100px;
     color: white;
 }
+.footer_logo {
+    p{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    img {
+        padding-left: 70px;
+    }
+}
+ 
