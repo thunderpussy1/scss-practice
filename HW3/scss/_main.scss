@@ -1,0 +1,183 @@
+@import '_variables1.scss';
+body {
+	background: $backGroundColorMain; 
+	margin: 0px auto;
+    width: 1200px;
+	padding:0px;
+    font-family: sans-serif;
+}
+header {
+    background: $headerBackground 100% 100% no-repeat;
+    background-size: cover;
+    height: 663px;
+    border-radius: 0% 0% 40%;
+    position: relative;
+    }
+.header-wrap {
+    margin-left: 115px;
+    p {
+        color: $colorHeader;
+    }
+}
+.landing-logo {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    p {
+        box-sizing: content-box;
+        width: 60px;
+        margin: 0px;
+        word-break: break-all;
+        text-align: center;
+        padding-left: 10px;
+    }
+}
+.landing-logo span {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 300;
+    font-size: 10px;
+    vertical-align: super;
+}
+.landing-logo img {
+    width: 30px;
+    height: 30px;
+}
+p.header_heading {
+    box-sizing: content-box;
+    width: 500px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.header_heading::after {
+    content: "awesome";
+    background-color: $backGroundColorWord;
+    position: relative;
+    bottom: 58px;
+    color: $sectionTextColor;
+}
+.header_text {
+    box-sizing: content-box;
+    width: 600px;
+    line-height: 1.5;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}  
+button {
+    background-color: $buttonBackground;
+    color: white;
+    margin: 0px auto;
+    border: 0px;
+    padding: 10px 30px;
+}
+.login {
+    margin-left: 130px;
+    color: white;
+}
+.section_text {
+    text-align: center;
+    font-weight: bold;
+    padding-left: 167px;
+    font-size: 35px;
+    color: $sectionTextColor;
+    position: relative;
+}
+    p.section_text::after {
+        content: "adventure";
+        background-color: $backGroundColorWord;
+        position: relative;
+        right: 188px;
+        color: $sectionTextColor; 
+    }
+.section_card {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto;
+    width: 800px;
+    background-color: $backGroungColorCardAndFooter;
+    padding: 20px;
+    border-radius: 5px;
+}
+img.section_card_img {
+    border-radius: 5px;
+}
+.section_card_right_container {
+    text-align:justify;
+    padding: 0px 50px;
+    color: #bec3ce;
+    line-height: 1.5;
+}
+.section_card_heading {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.section_link {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: auto;
+}
+.section_banner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    left: 100px;
+    box-sizing: content-box;
+    width: 1000px;
+    height: 100px;
+    background: $sectionBannerGradient;
+    border-radius: 5px;
+}
+.section_banner_heading::after{
+    content: "start";
+    background-color: $backGroundColorWord;
+    position: relative;
+    color: $sectionTextColor;
+    right: 264px;
+}
+.section_banner_button {
+    display: block;
+    margin-right: 100px;
+}
+.footer-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    background-color: $backGroungColorCardAndFooter;
+    color: white;
+    align-items: center;
+        div, p, span {
+            flex-basis: 30%;
+          }
+          div, span {
+            text-align: center;
+          }
+}
+.section_banner_heading {
+    padding: 20px 0px 0px 100px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px;
+}
+.section_banner_text {
+    padding-left: 100px;
+    color: white;
+}
+.footer_logo {
+    p{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    img {
+        padding-left: 70px;
+    }
+}
+ 
